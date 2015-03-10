@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Wellfleet);
+
+body {
+	background-color: #523620;
+	font-family: 'Wellfleet', times, serif;
+	font-size: 150%;
+	margin: 0px 0px 0px 0px;
+	color: #523620;
+    text-align: center;
+}
+
+
+#page1, #page2 {
+	background-color: #fecc6f;
+	padding: 10px;
+}
+
+#leftBall{
+    float:left;
+    max-width: 5%;
+}
+#rightBall{
+    float:right;
+    max-width: 5%;
+}
+#answer {
+	border: 12px double #fff;
+	color: #523620;
+	padding: 20px;
+	margin: auto auto auto auto;
+	width: 250px;
+	text-align: center;}
+
+select {
+    background-color: #fecc6f;
+    font-size: inherit;
+}
+input {
+    
+    background-color: #fecc6f;
+    width: 100%;
+    font-size: inherit;
+     
+}
+h3{
+    display: inline-block;
+}
+form{
+     display: inline-block;
+    width:5%;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Example</title>
+    <link rel="stylesheet" href="css/c03.css" />
+  </head>
+  <body>
+    <h1>TravelWorthy</h1>
+    <div id="info">
+      <h2>latest hotel offer</h2>
+      <div id="hotelName"></div>
+      <div id="roomRate"></div>
+      <div id="specialRate"></div>
+      <p>room rate when you book 2 or more nights</p>
+      <div id="offerEnds"></div>
+    </div>
+    <script src="js/example.js"></script>
+  
+      
+      <script type="text/javascript">
+  
+  //Configure below to change URL path to the snow image
+  var birdpic="bird.gif"
+  
+  // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
+  var distance = "pageheight";
+	
+  var dx, xp, yp;    // coordinate and position variables
+  var am, stx, sty;  // amplitude and step variables
+  var doc_width = 800, doc_height = 600; 
+  
+//Selects the position, speed, and amplitude of the bird
+    dx = 0;                        // set coordinate variables
+    xp = window.innerWidth-50;  // set position variables
+    yp = Math.random()*window.innerHeight-50;
+    am = Math.random()*20;         // set amplitude variables
+    stx = 0.7 + Math.random()/10; // set step variables
+    sty = 0.02 + Math.random()/10;  // set step variables
+	
+    
+//Puts the bird on the screen
+        document.write("<div id=\"dot"+ 0 +"\" style=\"POSITION: absolute; Z-INDEX: "+ 0 +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+birdpic+"' border=\"0\"><\/a><\/div>");
+
+//Animates the bird
+  function animation() {
+    doc_width =  document.body.clientWidth-10;
+		doc_height= document.body.offsetHeight;
+
+      xp -= stx;
+      if (xp < 0 - 50) {
+        xp =  window.innerWidth-50;
+        yp = Math.random()*window.innerHeight -50;
+        stx = 0.7 + Math.random();
+        sty = 0.02 + Math.random()/10; // set step variables
+      }
+      dx += sty;
+      document.getElementById("dot"+0).style.top=yp+ am*Math.sin(dx)+"px";
+      document.getElementById("dot"+0).style.left=xp+"px";  
+    
+    birdtimer=setTimeout("animation()", 10);
+  }
+		
+    animation();
+
+</script>
+    
+
+  </body>
+</html>
+
