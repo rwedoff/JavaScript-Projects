@@ -1,0 +1,21 @@
+body{
+    background-color: rgba(206, 206, 206, 0.79);  
+    text-align: center;
+    font-family:cursive, "courier new";
+}
+b{
+    font-weight: bold;
+    color: red;
+    background-color: #00e2ff;
+}
+
+i{
+ color: #fa1616 ; 
+}
+
+ul{
+ background-color: #f5ff01;   
+}
+h1{
+   text-transform: uppercase;
+}

@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(178, 103, 0, 0.79);  
+    text-align: right;
+    font-family: dr-sugiyama, "arial black", impact;
+}
+b{
+    font-weight: bold;
+    color: red;
+    background-color: yellow;
+}
+
+i{
+ color: #990ecc ; 
+}
+
+ul{
+ background-color: #4fff01;   
+    width:50%;  
+}
+li{
+ text-align: left;   
+}

@@ -1,0 +1,27 @@
+body{
+     
+    text-align: center;
+    font-family:"courier new";
+}
+b{
+    font-weight: bold;
+    color: green;
+    
+}
+p{
+ text-align: left;   
+}
+
+i{
+ color: #fa1616 ; 
+}
+
+ul{
+ background-color: rgba(185, 209, 0, 0.39);   
+}
+li{
+ text-align: left; 
+}
+h1{
+   text-transform: uppercase;
+}
